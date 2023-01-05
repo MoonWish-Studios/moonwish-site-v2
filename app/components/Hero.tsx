@@ -33,10 +33,12 @@ export default function Hero() {
           />
         </h1>
         <div className="space-x-5 mt-8 ">
-          <Button className="px-[30px] border-black border">Learn More</Button>
+          <Button className="px-[30px] border-black  text-white border hover:text-gray">
+            Learn More
+          </Button>
           <Button
-            className="bg-opacity-0 
-          border-gray border-2 text-gray px-[30px] hover:border-black hover:text-black"
+            className="bg-opacity-0 hover:text-black hover:border-black
+          border-gray border-2 text-gray px-[30px] "
           >
             Contact Us
           </Button>

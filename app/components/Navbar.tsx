@@ -57,15 +57,15 @@ export default function Navbar() {
             !open && "hidden"
           } absolute left-1/2 top-36 transform -translate-x-1/2  -translate-y-1/2  flex flex-col gap-2  bg-black p-4 w-[90%] rounded-lg`}
         >
+          <NavLink href="/process" text="Process" currentPath={pathname} />
           <NavLink href="/" text="Services" currentPath={pathname} />
-          <NavLink href="/" text="Appointment" currentPath={pathname} />
           <NavLink href="/" text="Contact" currentPath={pathname} />
         </nav>
         {/* Desktop Navbar */}
         <nav className="hidden md:flex md:flex-row md:gap-3 md:px-4 items-center">
-          <NavLink href="/" text="Process" currentPath={pathname} />
+          <NavLink href="/process" text="Process" currentPath={pathname} />
           <NavLink href="/" text="Services" currentPath={pathname} />
-          <Button>Contact</Button>
+          <Button className="hover:text-gray text-white ">Contact</Button>
         </nav>
       </div>
     </>

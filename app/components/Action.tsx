@@ -21,12 +21,14 @@ export default function Action() {
           </div>
         </div>
         <div className="space-x-5 mt-8 w-full text-center lg:text-start items-center lg:items-start">
-          <Button className="px-[30px] border-black border">Contact Us</Button>
+          <Button className="px-[30px] text-white hover:text-gray border-black border">
+            Contact Us
+          </Button>
           <Button
-            className="bg-opacity-0 
-          border-gray border-2 text-gray px-[30px] hover:border-black hover:text-black"
+            className="bg-opacity-0 hover:text-black hover:border-black
+          border-gray border-2 text-lightestGray px-[30px] "
           >
-            See Services
+            Contact Us
           </Button>
         </div>
       </div>

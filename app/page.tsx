@@ -18,8 +18,9 @@ export default function Home() {
       <WhyUs />
       <ProcessSection />
       <Action />
-      <div className="w-full flex justify-center bg-lightGray">
+      <div className="relative w-full h-[34rem] flex justify-center items-end  bg-lightGray">
         <Image
+          className="transform translate-y-[26px] z-50 top-0"
           src={"/assets/twoPeople.svg"}
           alt={""}
           height={900}
