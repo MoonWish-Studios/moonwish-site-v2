@@ -17,7 +17,7 @@ export default function Home() {
       </Statement>
       <WhyUs />
       <ProcessSection />
-      <Action />
+      <Action direction="process" />
       <div className="relative w-full h-[34rem] flex justify-center items-end  bg-lightGray">
         <Image
           className="transform translate-y-[26px] z-50 top-0"
