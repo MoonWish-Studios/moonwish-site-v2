@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function BookNowButton({
+export default function Button({
   children,
   className,
 }: {
@@ -12,8 +12,8 @@ export default function BookNowButton({
       href=""
       //   hover:bg-opacity-0 hover:outline hover:outline-2
       //   hover:outline-gray
-      className={`inline-block bg-black  hover:text-gray hover:transition-all
-      box-content rounded-md px-[35px] my-0 text-base py-[10px] text-white ${className} `}
+      className={`inline-block bg-black hover:transition-all
+      box-content rounded-md px-[35px] my-0 py-[10px] ${className} `}
     >
       {children}
     </Link>
