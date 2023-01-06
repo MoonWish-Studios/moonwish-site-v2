@@ -42,8 +42,6 @@ export default function page() {
         </div>
       </div>
       <ContactBar />
-
-      <Action direction={"services"} />
     </div>
   )
 }
