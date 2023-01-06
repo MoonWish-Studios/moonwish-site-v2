@@ -5,21 +5,45 @@ import Action from "../components/Action"
 export default function Page() {
   return (
     <div className="">
-      <Image
+      <HeroSection
+        title="Our Specialities That Makes Us Different"
+        description="Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices. Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices. "
         src="/assets/designs/services-design.svg"
-        width="700"
-        height="700"
-        alt="Services Graphic Design"
       />
+
+      <div className="w-full relative -z-20 bg-neutral-50 h-80 "></div>
       <CardSection />
-      <Action />
+      {/* <Action /> */}
+    </div>
+  )
+}
+
+function HeroSection({ title, description, src, children }: any) {
+  return (
+    <div className="w-full items-start overflow-x-clip pl-40 ">
+      <div className="my-16 mb-52">
+        <h1 className="text-5xl leading-snug max-w-xl tracking-wide my-6 font-semibold">
+          {title}
+        </h1>
+        <p className="text-2xl max-w-xl leading-snug text-gray-600">
+          {description}
+        </p>
+      </div>
+      <Image
+        src={src}
+        width="750"
+        height="500"
+        className="absolute right-0 top-32 -z-10
+         "
+        alt="Graphic Design"
+      />
     </div>
   )
 }
 
 function CardSection({}) {
   return (
-    <div className="flex flex-wrap gap-8 justify-center mx-9 my-12 ">
+    <div className="flex flex-wrap gap-8 justify-center mx-9 my-12 -translate-y-32 ">
       <Card
         title="UI/UX Design"
         text="Design the user interface and web pages including mobile layouts for your business website to maximize user experience"
@@ -38,7 +62,7 @@ function CardSection({}) {
       <Card
         title="Analytics"
         text="Want to have data and statistics of your website to find what source is driving the most traffic? We will track of analytics for you"
-        src="seo.svg"
+        src="analytics.svg"
       />
       <Card
         title="Custom Scheduling"
