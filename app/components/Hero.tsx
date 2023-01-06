@@ -3,6 +3,7 @@ import React from "react"
 import Button from "./Button"
 import { useRef } from "react"
 import Link from "next/link"
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 export default function Hero() {
@@ -28,7 +29,10 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div
+        <motion.div
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
           className="textSection  flex text-center md:text-left justify-center md:mt-20 lg:mt-48
         lg:pl-28 md:pl-16 flex-col lg:w-8/12 md:w-3/4  ml-3 mr-3 md:ml-0 md:mr-0 "
         >
@@ -43,14 +47,15 @@ export default function Hero() {
             />
           </h1>
           <div className="space-x-5 mt-8 ">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
               onClick={() => scrollDown(whoWeAre)}
               className="px-[30px] border-black  text-white border hover:text-gray
           inline-block text-center bg-black hover:transition-all
       box-content rounded-md my-0 py-[10px]"
             >
               Learn More
-            </button>
+            </motion.button>
             {/* <Button
             onClick={scrollDown}
             className="px-[30px] border-black  text-white border hover:text-gray"
@@ -65,7 +70,7 @@ export default function Hero() {
               Contact Us
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div
         ref={whoWeAre}
