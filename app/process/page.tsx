@@ -41,11 +41,10 @@ export default function page() {
         image={"envelope.png"}
         last={false}
       >
-        Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem
-        ultrices. Tellus in diam tellus quis dui pretium velit odio a. Tellus
-        dictum porttitor nisl leo non velit. Faucibus mattis potenti cursus et.
-        Amet iaculis auctor nec eget diam sit sed cursus. Pellentesque ipsum
-        commodo suspendisse at ultrices dui porta.
+        Here we will learn more about what you want from your website and get an
+        idea of how much content will be on your website. After we get a good
+        understanding of how your website is going to look we will give you the
+        project timeline and breakdown the cost of it as well.
       </PhaseBlock>
       <PhaseBlock
         number={"THREE"}
@@ -54,11 +53,11 @@ export default function page() {
         image={"envelope.png"}
         last={false}
       >
-        Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem
-        ultrices. Tellus in diam tellus quis dui pretium velit odio a. Tellus
-        dictum porttitor nisl leo non velit. Faucibus mattis potenti cursus et.
-        Amet iaculis auctor nec eget diam sit sed cursus. Pellentesque ipsum
-        commodo suspendisse at ultrices dui porta.
+        Starting here we will take care of almost everything. We will create a
+        initial design for you and once that design is created we will get your
+        input and see what needs to be changed. Once we have a design that you
+        are happy with we will sign the contract and start writing the code for
+        the website.
       </PhaseBlock>
       <PhaseBlock
         number={"FOUR"}
@@ -67,11 +66,11 @@ export default function page() {
         image={"envelope.png"}
         last={false}
       >
-        Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem
-        ultrices. Tellus in diam tellus quis dui pretium velit odio a. Tellus
-        dictum porttitor nisl leo non velit. Faucibus mattis potenti cursus et.
-        Amet iaculis auctor nec eget diam sit sed cursus. Pellentesque ipsum
-        commodo suspendisse at ultrices dui porta.
+        This is where we write all the code and create your website based off
+        the design that you approved of. We use the latest technology such as
+        TypeScript and React to develop your website. We make sure that the code
+        we write is clean and efficient in order to give users a better
+        experience and also improve your website’s SEO.
       </PhaseBlock>
       <PhaseBlock
         number={"FIVE"}
@@ -80,11 +79,10 @@ export default function page() {
         image={"envelope.png"}
         last={false}
       >
-        Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem
-        ultrices. Tellus in diam tellus quis dui pretium velit odio a. Tellus
-        dictum porttitor nisl leo non velit. Faucibus mattis potenti cursus et.
-        Amet iaculis auctor nec eget diam sit sed cursus. Pellentesque ipsum
-        commodo suspendisse at ultrices dui porta.
+        Once we are given access to your domain we are able to link the website
+        that we created to the domain and then its live! The SEO for your
+        website also begins to start taking effect and anyone on the internet
+        can now see your new website when they look up your domain.
       </PhaseBlock>
       <PhaseBlock
         number={"SIX"}
@@ -98,11 +96,11 @@ export default function page() {
         image={"envelope.png"}
         last={true}
       >
-        Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem
-        ultrices. Tellus in diam tellus quis dui pretium velit odio a. Tellus
-        dictum porttitor nisl leo non velit. Faucibus mattis potenti cursus et.
-        Amet iaculis auctor nec eget diam sit sed cursus. Pellentesque ipsum
-        commodo suspendisse at ultrices dui porta.
+        We continue to make sure to update and maintain your website in order to
+        keep it modern and fast. Aside from the regular maintenance such as
+        hosting or page speed we try to keep the SEO updated so that your page
+        continues to rank higher. You can also have us update parts of the
+        website whether it be uploading new images or changing the content.
       </PhaseBlock>
       <TechStack />
       <Action direction={"services"} />
