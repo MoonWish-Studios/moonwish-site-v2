@@ -1,8 +1,11 @@
 import React from "react"
 import Button from "./Button"
 import Image from "next/image"
+import Link from "next/link"
 
-export default function Action() {
+export default function Action({ direction }: { direction: string }) {
+  let text = direction == "services" ? "Our Services" : "Our Process"
+
   return (
     <div className="h-screen flex flex-row items-center">
       <div className="textSection z-40 lg:pl-36 w-full ">
@@ -21,14 +24,19 @@ export default function Action() {
           </div>
         </div>
         <div className="space-x-5 mt-8 w-full text-center lg:text-start items-center lg:items-start">
-          <Button className="px-[30px] text-white hover:text-gray border-black border">
+          <Button
+            href="/contact"
+            className="px-[30px] text-white hover:text-gray border-black border"
+          >
             Contact Us
           </Button>
+
           <Button
+            href={`/${direction}`}
             className="bg-opacity-0 hover:text-black hover:border-black
           border-gray border-2 text-lightestGray px-[30px] "
           >
-            Contact Us
+            {text}
           </Button>
         </div>
       </div>

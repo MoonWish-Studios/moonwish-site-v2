@@ -24,17 +24,25 @@ export default function Footer() {
           <div className="Chunk">
             <h1 className="text-3xl font-semibold mb-2">Chat with us</h1>
             <ul className="space-y-1 flex flex-col">
-              <Link className="hover:text-white" href={"/"}>
+              <Link
+                className="hover:text-white"
+                href={"mailto:mooonwishstudios@gmail.com"}
+              >
                 mooonwishstudios@gmail.com
               </Link>
-              <Link className="hover:text-white" href={"/"}>
+              <Link className="hover:text-white" href={"tel:7143309387"}>
                 (714) 330-9387
               </Link>
             </ul>
           </div>
           <div className="Chunk">
             <h1 className="text-3xl font-semibold mb-2">Find us</h1>
-            <Link className="hover:text-white" href={"/"}>
+            <Link
+              className="hover:text-white"
+              target="_blank"
+              rel="noreferrer noopener"
+              href={"https://goo.gl/maps/UtiZwyULrD6RBVADA"}
+            >
               10564 Progress Way, Cypress 90630
             </Link>
           </div>
@@ -44,13 +52,13 @@ export default function Footer() {
               <Link className="hover:text-white" href={"/"}>
                 Home
               </Link>
-              <Link className="hover:text-white" href={"/"}>
+              <Link className="hover:text-white" href={"/process"}>
                 Process
               </Link>
-              <Link className="hover:text-white" href={"/"}>
+              <Link className="hover:text-white" href={"/services"}>
                 Services
               </Link>
-              <Link className="hover:text-white" href={"/"}>
+              <Link className="hover:text-white" href={"/contact"}>
                 Contact
               </Link>
             </ul>

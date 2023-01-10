@@ -9,9 +9,9 @@ export default function NavLink({ href, text, currentPath }: NavLinkTypes) {
   return (
     <Link
       href={href}
-      className={`text-lg md:text-lg font-normal text-white md:text-black hover:text-gray
-        px-2 md:px-3 transition py-1 rounded-lg sm:rounded-full ${
-          href === currentPath && "bg-gradient"
+      className={`text-lg md:text-lg font-normal text-white md:text-black hover:underline first-letter underline-offset-8
+        px-2 md:px-3 transition decoration-gray py-1  ${
+          href === currentPath && "underline "
         }`}
       about={`${text} Link`}
     >
