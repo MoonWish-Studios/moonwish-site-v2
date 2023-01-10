@@ -28,9 +28,9 @@ export default function page() {
             Learn more about our process{" "}
           </h1>
           <div className="text-lightestGray text-2xl mt-5">
-            Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis
-            sem ultrices. Tellus in diam tellus quis dui pretium velit odio a.
-            Tellus dictum porttitor nisl leo non velit
+            Through countless trials and errors our team has developed a process
+            for developing your website from start to finish that is quick but
+            thorough.
           </div>
         </div>
       </div>

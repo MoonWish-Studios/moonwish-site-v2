@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="Chunks flex md:flex-row flex-col gap-x-28 space-x-0 space-y-9 md:space-y-0 text-lightestGray">
           <div className="Chunk">
             <h1 className="text-3xl font-semibold mb-2">Chat with us</h1>
-            <ul className="space-y-1 flex flex-col">
+            <div className="space-y-1 flex flex-col">
               <Link
                 className="hover:text-white"
                 href={"mailto:mooonwishstudios@gmail.com"}
@@ -33,7 +33,7 @@ export default function Footer() {
               <Link className="hover:text-white" href={"tel:7143309387"}>
                 (714) 330-9387
               </Link>
-            </ul>
+            </div>
           </div>
           <div className="Chunk">
             <h1 className="text-3xl font-semibold mb-2">Find us</h1>
@@ -46,9 +46,9 @@ export default function Footer() {
               10564 Progress Way, Cypress 90630
             </Link>
           </div>
-          <div className="Chunk">
+          <div className="Chunk pr-10">
             <h1 className="text-3xl font-semibold mb-2">Company</h1>
-            <ul className="space-y-1 flex flex-col">
+            <div className="space-y-1 flex flex-col">
               <Link className="hover:text-white" href={"/"}>
                 Home
               </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
               <Link className="hover:text-white" href={"/contact"}>
                 Contact
               </Link>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
