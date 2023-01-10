@@ -17,7 +17,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="">
+      <body className="w-full lg:flex lg:flex-col items-center justify-center">
         <Navbar />
         {children}
         <Footer />

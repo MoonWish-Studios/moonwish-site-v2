@@ -15,8 +15,8 @@ export default function Navbar() {
     console.log(open)
   })
   return (
-    <>
-      <div className=" flex py-4 justify-between items-center ml-5 mr-5 md:mt-6 lg:ml-32 lg:mr-32 md:ml-10 md:mr-10">
+    <div className="lg:w-[70rem] xl:w-[80rem]">
+      <div className="flex py-4 justify-between items-center ml-5 mr-5 md:mt-6 lg:ml-32 lg:mr-32 md:ml-10 md:mr-10">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -68,6 +68,6 @@ export default function Navbar() {
           <Button className="hover:text-gray text-white ">Contact</Button>
         </nav>
       </div>
-    </>
+    </div>
   )
 }
