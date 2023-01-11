@@ -15,7 +15,7 @@ export default function Navbar() {
     console.log(open)
   })
   return (
-    <div className=" lg:mx-auto  xl:w-[80rem]">
+    <div className=" lg:mx-auto  xl:w-[80rem] z-[999] relative">
       <div className="flex items-center justify-between py-4 ml-5 mr-5 md:mt-6 md:ml-10 md:mr-10">
         {/* Logo */}
         <Link href="/">
