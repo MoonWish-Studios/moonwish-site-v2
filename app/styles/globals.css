@@ -3,6 +3,11 @@
 @tailwind utilities;
 @tailwind components;
 
+@layer components {
+  .hyphens-auto {
+    hyphens: auto;
+  }
+}
 :root {
   background: "#FAFAF";
 }
