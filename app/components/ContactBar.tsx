@@ -10,14 +10,14 @@ export default function ContactBar() {
         <h1 className="mb-3 text-sm font-semibold text-lightestGray ">
           OR SCHEDULE A MEETING
         </h1>
-        <PopupButton
+        {/* <PopupButton
           url="https://calendly.com/mooonwishstudios/appointment"
           rootElement={document.getElementById("root")!}
           className="inline-block text-center bg-black hover:transition-all
           box-content rounded-md my-0  bg-opacity-0 hover:text-black hover:border-black
           border-gray border-2 text-lightestGray px-[18px] py-[8px] font-light"
           text="Schedule Meeting"
-        />
+        /> */}
       </div>
       <div className="flex flex-col items-start justify-center addressSection md:w-1/3 md:items-center ">
         <h1 className="text-sm font-semibold text-lightestGray ">ADDRESS</h1>
