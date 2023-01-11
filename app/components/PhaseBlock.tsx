@@ -56,9 +56,9 @@ export default function PhaseBlock({
               {children}
             </p>
             <h1 className="text-2xl font-medium">Outcome</h1>
-            <ul className="grid grid-cols-2  text-lightestGray text-lg pl-3 pr-3">
+            <ul className="grid grid-cols-2 gap-x-6 text-lightestGray text-lg ml-4 text-left">
               {outcome.map((item: string) => (
-                <li className="mr-0 md:mr-20">- {item}</li>
+                <li className="mr-0 lg:mr-20">- {item}</li>
               ))}
             </ul>
           </div>

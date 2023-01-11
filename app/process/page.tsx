@@ -7,7 +7,7 @@ import TechStack from "../components/TechStack"
 
 export default function page() {
   return (
-    <div>
+    <div className="max-w-screen-2xl mx-auto">
       <div className="home w-full mb-12 flex flex-col items-center md:items-start  md:flex-row-reverse md:justify-between justify-start  ">
         <div className=" imageSection pb-10 flex w-80 md:w-2/3 ">
           <div>
@@ -21,19 +21,30 @@ export default function page() {
           </div>
         </div>
         <div
-          className="textSection  flex text-center md:text-left justify-center md:mt-20 lg:mt-48
-        lg:pl-28 md:pl-16 flex-col lg:w-8/12 md:w-3/4  ml-3 mr-3 md:ml-0 md:mr-0 "
+          className="textSection  flex text-center md:text-left justify-center md:mt-20 lg:mt-32
+        lg:ml-20 xl:ml-44 md:ml-16 flex-col lg:w-6/12 md:w-3/4  ml-3 mr-3 md:mr-0 max-w-md sm:max-w-lg"
         >
           <h1 className="inline lg:text-5xl text-4xl font-medium tracking-[0.03em]">
             Learn more about our process{" "}
           </h1>
           <div className="text-lightestGray text-2xl mt-5">
-            Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis
-            sem ultrices. Tellus in diam tellus quis dui pretium velit odio a.
-            Tellus dictum porttitor nisl leo non velit
+            Agile-oriented, our flexible process will get your professional and
+            modern website running in no time
           </div>
         </div>
       </div>
+      <PhaseBlock
+        number={"ONE"}
+        title={"Contact"}
+        outcome={["Get To Know You", "Arrange First Meeting"]}
+        image={"envelope.png"}
+        last={false}
+      >
+        For this first step we will get in contact and first see if we can offer
+        what your business needs. We’ll learn about the basics of your business
+        and if you decide that you are interested we will set up a time to meet
+        to discuss what your website needs.
+      </PhaseBlock>
       <PhaseBlock
         number={"TWO"}
         title={"Discovery & Research"}

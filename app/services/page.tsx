@@ -4,14 +4,14 @@ import Action from "../components/Action"
 
 export default function Page() {
   return (
-    <div className="lg:max-w-8xl ">
+    <div className="mx-auto lg:max-w-screen-2xl">
       <div className="relative w-full overflow-hidden">
         <HeroSection
           title="Our Specialities That Makes Us Different"
           description="Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices "
           src="/assets/designs/services-design.svg"
         />
-        <div className="w-full lg:rounded-md relative -z-20 bg-neutral-50 h-40 sm:h-80 "></div>
+        <div className="relative w-full h-40 lg:rounded-md -z-20 bg-neutral-50 sm:h-80 "></div>
       </div>
       <CardSection />
       {/* <Action /> */}
@@ -21,16 +21,16 @@ export default function Page() {
 
 function HeroSection({ title, description, src, children }: any) {
   return (
-    <div className="flex flex-col-reverse md:flex-row w-full items-center    box-border mt-8">
-      <div className="mt-3 md:text-left max-w-md md:h-64 text-center  lg:mt-24 lg:mb-28 mb-6 md:mb-8 md:mt-6 md:pl-16 lg:ml-44  lg:max-w-xl px-5">
-        <h1 className="text-4xl lg:text-5xl leading-tight  sm:tracking-wide mt-6 font-medium">
+    <div className="box-border flex flex-col-reverse items-center w-full mt-8 md:flex-row">
+      <div className="max-w-md px-5 mt-3 mb-6 text-center md:text-left md:h-64 lg:mt-24 lg:mb-28 xl:ml-28 md:mb-8 md:mt-6 md:pl-16 lg:ml-0 lg:max-w-xl">
+        <h1 className="mt-6 text-4xl font-medium lg:text-5xl lg:leading-tight sm:tracking-wide">
           {title}
         </h1>
-        <p className="hyphens-auto text-xl mt-4 lg:text-2xl max-w-xl  leading-snug text-gray-600">
+        <p className="max-w-xl mt-4 text-xl leading-snug text-gray-600 hyphens-auto lg:text-2xl">
           {description}
         </p>
       </div>
-      <div className="md:absolute right-12 top-16 -z-10 h-72 md:scale-150 w-60 lg:scale-[250%] lg:top-40 lg:right-48 transition transform scale-125 mx-auto    ">
+      <div className="md:absolute right-12   -z-10 h-72 md:scale-125 w-64 lg:scale-[225%] lg:top-40 lg:right-20 xl:right-48 transition transform  mx-auto    ">
         <Image src={src} fill className="object-contain" alt="Graphic Design" />
       </div>
     </div>
@@ -39,7 +39,7 @@ function HeroSection({ title, description, src, children }: any) {
 
 function CardSection({}) {
   return (
-    <div className="flex flex-wrap gap-8 justify-center mx-9 my-12 -translate-y-32 md:-translate-y-52 ">
+    <div className="flex flex-wrap justify-center gap-8 my-12 -translate-y-32 mx-9 md:-translate-y-52 ">
       <Card
         title="UI/UX Design"
         text="Design the user interface and web pages including mobile layouts for your business website to maximize user experience"
@@ -110,8 +110,8 @@ function Card({
         />
       </div>
       <div className="px-8 text-xl font-medium ">{title}</div>
-      <p className="px-8 text-gray-700 text-lg ">{text}</p>
-      <div className="w-full absolute bottom-0 bg-brown h-9"></div>
+      <p className="px-8 text-lg text-gray-700 ">{text}</p>
+      <div className="absolute bottom-0 w-full bg-brown h-9"></div>
     </div>
   )
 }

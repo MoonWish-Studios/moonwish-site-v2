@@ -14,7 +14,7 @@ export default function TechStack() {
     "vs_code",
   ]
   return (
-    <div className="flex flex-col items-start bg-lightGray pl-20 pt-20 pb-20">
+    <div className="flex flex-col items-start bg-lightGray py-20 px-10">
       <h1 className="text-sm mb-2 font-semibold text-lightestGray">
         TECH STACK
       </h1>
@@ -24,13 +24,14 @@ export default function TechStack() {
       <p className="lg:text-2xl text-xl font-normal text-lightestGray tracking-wide mb-6">
         We use the latest technologies and software to design your website
       </p>
-      <div className="relative flex items-center overflow-x-auto scrollbar-hide space-x-10">
+      <div className="relative flex flex-wrap gap-10  items-center overflow-x-auto mt-6 scrollbar-hide justify-center sm:justify-start sm:items-start">
         {names.map((item: string) => (
           <Image
             src={`/assets/techStack/${item}.png`}
-            alt={""}
+            alt={item}
             height={50}
             width={50}
+            className="object-contain"
           />
         ))}
       </div>
