@@ -1,7 +1,11 @@
+import "server-only"
 import React from "react"
 import Image from "next/image"
-import ContactBar from "../components/ContactBar"
-
+// import ContactBar from "../components/ContactBar"
+import dynamic from "next/dynamic"
+const ContactBar = dynamic(() => import("../components/ContactBar"), {
+  ssr: false,
+})
 export default function page() {
   return (
     <div className="mx-auto lg:max-w-screen-2xl ">
