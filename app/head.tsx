@@ -7,7 +7,11 @@ export default function Head() {
       <link rel="icon" href="/assets/brand/Logo.svg" />
       <meta
         name="description"
-        content="Moonwish Studios designs modern and professional websites for your business. We take care of developing the website using technologies and creative designs to build your business a strong online prescence"
+        content="At Moonwish Studios, we specialize in creating custom websites that are designed to meet the unique needs of your business. From initial concept to final launch, our team of experienced designers, programmers, and developers will work closely with you to bring your vision to life."
+      />
+      <meta
+        name="keyword"
+        content="Web development, Website design, Web programming, Front-end development,Responsive design, UI/UX design, HTML, CSS, JavaScript, Framework (React, Web hosting, Domain registration, SEO (Search Engine Optimization)"
       />
     </>
   )
