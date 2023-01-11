@@ -32,21 +32,22 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           className={`${
             open && "bg-black"
-          }  rounded-lg mx-3 p-2 transition-colors duration-200 md:hidden`}
+          }  rounded-lg mx-3 p-2    transition-colors duration-200 md:hidden hover:cursor-pointer w-10 h-10`}
         >
           {open ? (
             <Image
               src="/assets/icons/menu-close.svg"
               alt="Menu Icon"
-              width="25"
-              height="25"
+              width="20"
+              height="20"
+              className="py-0.5 mx-auto"
             />
           ) : (
             <Image
               src="/assets/icons/menu.svg"
               alt="Menu Icon"
-              width="25"
-              height="25"
+              width="24"
+              height="24"
             />
           )}
         </div>
