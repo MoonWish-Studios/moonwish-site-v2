@@ -7,12 +7,11 @@ import TechStack from "../components/TechStack"
 
 export default function page() {
   return (
-    <div>
-      <div className="home w-full mb-12 flex flex-col items-center md:items-start  md:flex-row-reverse md:justify-between justify-start  ">
-        <div className=" imageSection pb-10 flex w-80 md:w-2/3 ">
-          <div>
+    <div className="mx-auto max-w-screen-2xl ">
+      <div className="flex flex-col items-center justify-start w-full mb-12 home md:items-start md:flex-row-reverse md:justify-between ">
+        <div className="flex pb-10 -translate-y-12 imageSection">
+          <div className="relative -z-50">
             <Image
-              className=""
               src="/assets/processHero.svg"
               height={900}
               width={900}
@@ -20,25 +19,33 @@ export default function page() {
             />
           </div>
         </div>
-        <div
-          className="textSection  flex text-center md:text-left justify-center md:mt-20 lg:mt-48
-        lg:pl-28 md:pl-16 flex-col lg:w-8/12 md:w-3/4  ml-3 mr-3 md:ml-0 md:mr-0 "
-        >
+        <div className="flex flex-col justify-center max-w-md ml-3 mr-3 text-center textSection md:text-left md:mt-20 lg:mt-32 lg:ml-20 xl:ml-44 md:ml-16 lg:w-6/12 md:w-3/4 md:mr-0 sm:max-w-lg">
           <h1 className="inline lg:text-5xl text-4xl font-medium tracking-[0.03em]">
             Learn more about our process{" "}
           </h1>
-          <div className="text-lightestGray text-2xl mt-5">
-            Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis
-            sem ultrices. Tellus in diam tellus quis dui pretium velit odio a.
-            Tellus dictum porttitor nisl leo non velit
+          <div className="mt-5 text-2xl text-lightestGray">
+            Agile-oriented, our flexible process will get your professional and
+            modern website running in no time
           </div>
         </div>
       </div>
       <PhaseBlock
+        number={"ONE"}
+        title={"Contact"}
+        outcome={["Get To Know You", "Arrange First Meeting"]}
+        image={"process/contact.png"}
+        last={false}
+      >
+        For this first step we will get in contact and first see if we can offer
+        what your business needs. We’ll learn about the basics of your business
+        and if you decide that you are interested we will set up a time to meet
+        to discuss what your website needs.
+      </PhaseBlock>
+      <PhaseBlock
         number={"TWO"}
         title={"Discovery & Research"}
         outcome={["Breakdown plan & pricing", "Project timeline"]}
-        image={"envelope.png"}
+        image={"process/brainstorm.png"}
         last={false}
       >
         Here we will learn more about what you want from your website and get an
@@ -50,7 +57,7 @@ export default function page() {
         number={"THREE"}
         title={"Design & Revision"}
         outcome={["Design prototypes", "Revisions"]}
-        image={"envelope.png"}
+        image={"process/design.png"}
         last={false}
       >
         Starting here we will take care of almost everything. We will create a
@@ -63,7 +70,7 @@ export default function page() {
         number={"FOUR"}
         title={"Development"}
         outcome={["Custom coded website", "Working SEO"]}
-        image={"envelope.png"}
+        image={"process/code.png"}
         last={false}
       >
         This is where we write all the code and create your website based off
@@ -76,7 +83,7 @@ export default function page() {
         number={"FIVE"}
         title={"Go Live"}
         outcome={["Connect your domain", "Website launch"]}
-        image={"envelope.png"}
+        image={"process/live.png"}
         last={false}
       >
         Once we are given access to your domain we are able to link the website
@@ -93,7 +100,7 @@ export default function page() {
           "Regular maintenance",
           "Additional pages",
         ]}
-        image={"envelope.png"}
+        image={"process/update.png"}
         last={true}
       >
         We continue to make sure to update and maintain your website in order to

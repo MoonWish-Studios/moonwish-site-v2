@@ -7,12 +7,9 @@ export default function Action({ direction }: { direction: string }) {
   let text = direction == "services" ? "Our Services" : "Our Process"
 
   return (
-    <div className="h-screen flex flex-row items-center">
-      <div className="textSection z-40 lg:pl-36 w-full ">
-        <div
-          className="flex flex-col w-full  lg:text-start text-center lg:items-start
-       items-center "
-        >
+    <div className="flex flex-row items-center h-screen my-60">
+      <div className="relative z-40 w-full textSection lg:pl-36 ">
+        <div className="flex flex-col items-center w-full text-center lg:text-start lg:items-start ">
           <div className="mb-3 text-sm font-semibold text-lighterGray">
             READY TO WORK WITH US?
           </div>
@@ -23,7 +20,7 @@ export default function Action({ direction }: { direction: string }) {
             Let us build your dream website
           </div>
         </div>
-        <div className="space-x-5 mt-8 w-full text-center lg:text-start items-center lg:items-start">
+        <div className="items-center mt-8 space-x-5 text-center lg:text-start lg:items-start">
           <Button
             href="/contact"
             className="px-[30px] text-white hover:text-gray border-black border"
@@ -39,14 +36,14 @@ export default function Action({ direction }: { direction: string }) {
             {text}
           </Button>
         </div>
-      </div>
-      <div className="imageSection w-full flex justify-center z-0 absolute lg:w-full pl-10 pr-10">
-        <Image
-          src={"/assets/icons/smallMoon.svg"}
-          alt={""}
-          height={650}
-          width={650}
-        />
+        <div className="absolute transform  scale-150 top-1/2 left-1/2 abs-transform -z-10 lg:left-[70%] lg:scale-[175%]">
+          <Image
+            src={"/assets/icons/smallMoon.svg"}
+            alt={""}
+            height={600}
+            width={600}
+          />
+        </div>
       </div>
     </div>
   )

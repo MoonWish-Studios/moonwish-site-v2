@@ -6,11 +6,6 @@ import React, { useEffect, useState } from "react"
 import NavLink from "./NavLink"
 import Button from "./Button"
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-}
-
 export default function Navbar() {
   const pathname = usePathname()
   // set menu state
@@ -20,8 +15,8 @@ export default function Navbar() {
     console.log(open)
   })
   return (
-    <>
-      <div className=" flex py-4 justify-between items-center ml-5 mr-5 md:mt-6 lg:ml-32 lg:mr-32 md:ml-10 md:mr-10">
+    <div className=" lg:mx-auto  xl:w-[80rem] z-[999] relative">
+      <div className="flex items-center justify-between py-4 ml-5 mr-5 md:mt-6 md:ml-10 md:mr-10">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -61,21 +56,21 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           className={`${
             !open && "hidden"
-          } absolute left-1/2 top-36 transform -translate-x-1/2  -translate-y-1/2  flex flex-col gap-2  bg-black p-4 w-[90%] rounded-lg`}
+          } absolute left-1/2 top-36 transform -translate-x-1/2  -translate-y-1/2  flex flex-col gap-2 z-50 bg-black p-4 w-[90%] rounded-lg`}
         >
           <NavLink href="/process" text="Process" currentPath={pathname} />
           <NavLink href="/services" text="Services" currentPath={pathname} />
           <NavLink href="/contact" text="Contact" currentPath={pathname} />
         </nav>
         {/* Desktop Navbar */}
-        <nav className="hidden md:flex md:flex-row md:gap-3 md:px-4 items-center">
+        <nav className="items-center hidden md:flex md:flex-row md:gap-3 md:px-4">
           <NavLink href="/process" text="Process" currentPath={pathname} />
           <NavLink href="/services" text="Services" currentPath={pathname} />
-          <Button href="contact" className="hover:text-gray text-white ">
+          <Button href="contact" className="text-white hover:text-gray ">
             Contact
           </Button>
         </nav>
       </div>
-    </>
+    </div>
   )
 }

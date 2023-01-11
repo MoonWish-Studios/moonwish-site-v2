@@ -7,8 +7,8 @@ import Action from "../components/Action"
 
 export default function page() {
   return (
-    <div>
-      <div className="home w-full flex flex-col items-center md:items-start  md:flex-row-reverse md:justify-between justify-start  ">
+    <div className="mx-auto lg:max-w-screen-2xl ">
+      <div className="home w-full  flex flex-col items-center md:items-start  md:flex-row-reverse md:justify-between justify-start  ">
         <div className="hidden  imageSection md:flex w-80 md:w-2/3 ">
           <div>
             <Image
@@ -20,10 +20,7 @@ export default function page() {
             />
           </div>
         </div>
-        <div
-          className="textSection  flex text-center md:text-left justify-center mb-20 md:mb-0 mt-20 lg:mt-48
-        lg:pl-28 md:pl-16 flex-col lg:w-8/12 md:w-3/4  ml-3 mr-3 md:ml-0 md:mr-0 "
-        >
+        <div className="textSection  flex text-center md:text-left justify-center mb-20 md:mb-0 mt-20 lg:mt-48 lg:pl-16 xl:pl-40 md:pl-16 flex-col lg:w-8/12 md:w-3/4  ml-3 mr-3 md:ml-0 md:mr-0 ">
           <h1 className="text-sm font-semibold text-lightestGray">
             GIVE US A CALL
           </h1>

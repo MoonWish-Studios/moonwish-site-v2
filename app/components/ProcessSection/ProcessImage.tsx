@@ -18,16 +18,16 @@ export default function ProcessImage({
 }) {
   let possiblePad = first ? "md:ml-20 ml-12" : ""
   return (
-    <div className="imageItem min-w-fit flex flex-row space-x-10 items-center pr-10">
-      <div className="flex flex-col space-y-4 items-center ">
+    <div className="flex flex-row items-center pr-10 space-x-10 imageItem min-w-fit">
+      <div className="flex flex-col items-center space-y-4 ">
         <Image
-          className={`${width} h-auto ${possiblePad} `}
+          className={`${width} mix-blend-darken h-auto ${possiblePad}  `}
           src={`/assets/${image}`}
           alt={""}
-          height={100}
-          width={100}
+          height={125}
+          width={125}
         />
-        <h1 className={`${possiblePad}`}>{title}</h1>
+        <h1 className={` font-medium ${possiblePad}`}>{title}</h1>
       </div>
       {arrow ? (
         <Image

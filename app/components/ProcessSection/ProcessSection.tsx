@@ -4,10 +4,9 @@ import Link from "next/link"
 
 export default function ProcessSection() {
   return (
-    <div className="w-full bg-lighterYellow h-fit pt-20 pb-20 md:pt-28">
+    <div className="w-full pt-20 pb-20 bg-lighterYellow h-fit md:pt-28">
       <div
-        className="topText flex flex-col w-full lg:pl-20 lg:text-start text-center lg:items-start
-       items-center mb-10 md:mb-16"
+        className="flex flex-col items-center w-full mb-10 text-center topText lg:pl-20 lg:text-start lg:items-start md:mb-16"
       >
         <div className="mb-3 text-sm font-semibold text-lighterGray">
           HOW IT WORKS
@@ -17,8 +16,8 @@ export default function ProcessSection() {
         </div>
       </div>
       <Scroll />
-      <div className="w-full flex justify-center lg:justify-start">
-        <div className="w-7/12 text-center lg:text-start lg:ml-24 md:pb-14 pt-28 text-2xl">
+      <div className="flex justify-center w-full lg:justify-start">
+        <div className="w-7/12 text-2xl text-center lg:text-start lg:ml-24 md:pb-14 pt-28">
           Learn more about the{" "}
           <Link className="underline" href={"/"}>
             process

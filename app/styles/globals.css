@@ -3,6 +3,15 @@
 @tailwind utilities;
 @tailwind components;
 
+@layer components {
+  .hyphens-auto {
+    hyphens: auto;
+  }
+
+  .abs-transform {
+    @apply absolute transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
 :root {
   background: "#FAFAF";
 }
