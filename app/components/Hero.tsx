@@ -67,12 +67,12 @@ export default function Hero() {
       </div>
       <div
         ref={whoWeAre}
-        className=" flex flex-col items-center justify-center space-y-8 bg-lightGray h-[50vh]"
+        className="flex flex-col items-center justify-center space-y-8 bg-gray-100 py-60"
       >
         <div className="font-semibold text-center title text-gray">
           WHO WE ARE
         </div>
-        <div className="w-8/12 text-2xl leading-tight text-center text-black body lg:text-4xl md:text-3xl">
+        <div className="w-8/12 text-2xl text-center text-black lg:leading-snug body lg:text-4xl md:text-3xl ">
           Our mission is to make a positive impact on businesses in our
           community who want to provide the best service to their customers. We
           strive to highlight the amazing products and services that your
