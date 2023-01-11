@@ -1,11 +1,13 @@
 "use client"
 import React, { useState } from "react"
 import Button from "./Button"
+import dynamic from "next/dynamic"
 
-import { PopupButton } from "react-calendly"
+const PopupButton = dynamic(
+  () => import("react-calendly").then((calendly) => calendly.PopupButton),
+  { ssr: false }
+)
 export default function ContactBar() {
-  const [scheduleMode, setScheduleMode] = useState(false)
-
   return (
     <div className="flex flex-col justify-start w-full pt-20 pb-20 pl-12 space-y-6 text-left md:flex-row md:justify-center md:text-center bg-neutral-50 md:space-y-0 md:pt-36 md:pb-36">
       <div className="flex flex-col items-start justify-center meetingSection md:w-1/3 md:items-center">
