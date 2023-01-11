@@ -6,11 +6,6 @@ import React, { useEffect, useState } from "react"
 import NavLink from "./NavLink"
 import Button from "./Button"
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-}
-
 export default function Navbar() {
   const pathname = usePathname()
   // set menu state
@@ -20,8 +15,8 @@ export default function Navbar() {
     console.log(open)
   })
   return (
-    <div className="lg:w-[70rem] xl:w-[80rem]">
-      <div className="flex py-4 justify-between items-center ml-5 mr-5 md:mt-6 lg:ml-32 lg:mr-32 md:ml-10 md:mr-10">
+    <div className=" lg:mx-auto lg:w-[64rem] xl:w-[80rem]">
+      <div className="flex py-4 justify-between items-center ml-5 mr-5 md:mt-6 md:ml-10 md:mr-10">
         {/* Logo */}
         <Link href="/">
           <Image

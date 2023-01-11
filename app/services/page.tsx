@@ -4,7 +4,7 @@ import Action from "../components/Action"
 
 export default function Page() {
   return (
-    <div className="lg:max-w-7xl ">
+    <div className="lg:max-w-8xl ">
       <div className="relative w-full overflow-hidden">
         <HeroSection
           title="Our Specialities That Makes Us Different"
@@ -22,7 +22,7 @@ export default function Page() {
 function HeroSection({ title, description, src, children }: any) {
   return (
     <div className="flex flex-col-reverse md:flex-row w-full items-center    box-border mt-8">
-      <div className="mt-3 md:text-left max-w-md md:h-64 text-center  lg:mt-24 lg:mb-28 mb-6 md:mb-8 md:mt-6 md:pl-16 lg:pl-32 lg:max-w-lg px-5">
+      <div className="mt-3 md:text-left max-w-md md:h-64 text-center  lg:mt-24 lg:mb-28 mb-6 md:mb-8 md:mt-6 md:pl-16 lg:ml-44  lg:max-w-xl px-5">
         <h1 className="text-4xl lg:text-5xl leading-tight  sm:tracking-wide mt-6 font-medium">
           {title}
         </h1>
@@ -30,7 +30,7 @@ function HeroSection({ title, description, src, children }: any) {
           {description}
         </p>
       </div>
-      <div className="md:absolute right-12 top-16 -z-10 h-72 md:scale-150 w-60 lg:scale-[200%] lg:top-40 lg:right-40 transition transform scale-125 mx-auto    ">
+      <div className="md:absolute right-12 top-16 -z-10 h-72 md:scale-150 w-60 lg:scale-[250%] lg:top-40 lg:right-48 transition transform scale-125 mx-auto    ">
         <Image src={src} fill className="object-contain" alt="Graphic Design" />
       </div>
     </div>
