@@ -8,7 +8,7 @@ export default function Page() {
       <div className="relative w-full overflow-hidden">
         <HeroSection
           title="Our Specialities That Makes Us Different"
-          description="Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices "
+          description="Here are some of the services that we offer to make your business's website the best it can be!"
           src="/assets/designs/services-design.svg"
         />
         <div className="relative w-full h-40 lg:rounded-md -z-20 bg-neutral-50 sm:h-80 "></div>
