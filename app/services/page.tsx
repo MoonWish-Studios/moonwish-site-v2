@@ -7,7 +7,7 @@ export default function Page() {
     <div className="">
       <HeroSection
         title="Our Specialities That Makes Us Different"
-        description="Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices. Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices. "
+        description="Here are some of the things we can do for your business!"
         src="/assets/designs/services-design.svg"
       />
 
