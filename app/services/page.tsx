@@ -4,14 +4,15 @@ import Action from "../components/Action"
 
 export default function Page() {
   return (
-    <div className="">
-      <HeroSection
-        title="Our Specialities That Makes Us Different"
-        description="Here are some of the things we can do for your business!"
-        src="/assets/designs/services-design.svg"
-      />
-
-      <div className="w-full relative -z-20 bg-neutral-50 h-80 "></div>
+    <div className="mx-auto lg:max-w-screen-2xl">
+      <div className="relative w-full overflow-hidden">
+        <HeroSection
+          title="Our Specialities That Makes Us Different"
+          description="Lorem ipsum dolor sit amet consectetur. Amet nec facilisi lobortis sem ultrices "
+          src="/assets/designs/services-design.svg"
+        />
+        <div className="relative w-full h-40 lg:rounded-md -z-20 bg-neutral-50 sm:h-80 "></div>
+      </div>
       <CardSection />
       {/* <Action /> */}
     </div>
@@ -20,30 +21,25 @@ export default function Page() {
 
 function HeroSection({ title, description, src, children }: any) {
   return (
-    <div className="w-full items-start overflow-x-clip pl-40 ">
-      <div className="my-16 mb-52">
-        <h1 className="text-5xl leading-snug max-w-xl tracking-wide my-6 font-semibold">
+    <div className="box-border flex flex-col-reverse items-center w-full mt-8 md:flex-row">
+      <div className="max-w-md px-5 mt-3 mb-6 text-center md:text-left md:h-64 lg:mt-24 lg:mb-28 xl:ml-28 md:mb-8 md:mt-6 md:pl-16 lg:ml-0 lg:max-w-xl">
+        <h1 className="mt-6 text-4xl font-medium lg:text-5xl lg:leading-tight sm:tracking-wide">
           {title}
         </h1>
-        <p className="text-2xl max-w-xl leading-snug text-gray-600">
+        <p className="max-w-xl mt-4 text-xl leading-snug text-gray-600 hyphens-auto lg:text-2xl">
           {description}
         </p>
       </div>
-      <Image
-        src={src}
-        width="750"
-        height="500"
-        className="absolute right-0 top-32 -z-10
-         "
-        alt="Graphic Design"
-      />
+      <div className="md:absolute right-12   -z-10 h-72 md:scale-125 w-64 lg:scale-[225%] lg:top-40 lg:right-20 xl:right-48 transition transform  mx-auto    ">
+        <Image src={src} fill className="object-contain" alt="Graphic Design" />
+      </div>
     </div>
   )
 }
 
 function CardSection({}) {
   return (
-    <div className="flex flex-wrap gap-8 justify-center mx-9 my-12 -translate-y-32 ">
+    <div className="flex flex-wrap justify-center gap-8 my-12 -translate-y-32 mx-9 md:-translate-y-52 ">
       <Card
         title="UI/UX Design"
         text="Design the user interface and web pages including mobile layouts for your business website to maximize user experience"
@@ -114,8 +110,8 @@ function Card({
         />
       </div>
       <div className="px-8 text-xl font-medium ">{title}</div>
-      <p className="px-8 text-gray-700 text-lg ">{text}</p>
-      <div className="w-full absolute bottom-0 bg-brown h-9"></div>
+      <p className="px-8 text-lg text-gray-700 ">{text}</p>
+      <div className="absolute bottom-0 w-full bg-brown h-9"></div>
     </div>
   )
 }
