@@ -13,7 +13,9 @@ specifiers:
   next: ^13.1.1
   postcss: ^8.4.20
   react: 18.2.0
+  react-calendly: ^4.1.0
   react-dom: 18.2.0
+  server-only: ^0.0.1
   tailwind-scrollbar-hide: ^1.1.7
   tailwindcss: ^3.2.4
   typescript: 4.9.3
@@ -30,7 +32,9 @@ dependencies:
   nanoid: 4.0.0
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
+  react-calendly: 4.1.0_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
+  server-only: 0.0.1
   tailwind-scrollbar-hide: 1.1.7
   typescript: 4.9.3
   typewriter-effect: 2.19.0_biqbaboplfbrettd7655fr4n2y
@@ -1998,6 +2002,17 @@ packages:
       performance-now: 2.1.0
     dev: false
 
+  /react-calendly/4.1.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-a4/yHZwwmuEgUZOfRh0Hs5lt96WSlWI3GQ0fNWWUnKN11YjR5E0fq4YZSMZ3Cas8FVcdoM88JSnNPbZoeLzbtQ==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -2113,6 +2128,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /server-only/0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command/2.0.0:

@@ -1,15 +1,16 @@
+import "server-only"
 import React from "react"
-import Link from "next/link"
 import Image from "next/image"
-import ContactBar from "../components/ContactBar"
-
-import Action from "../components/Action"
-
+// import ContactBar from "../components/ContactBar"
+import dynamic from "next/dynamic"
+const ContactBar = dynamic(() => import("../components/ContactBar"), {
+  ssr: false,
+})
 export default function page() {
   return (
-    <div>
-      <div className="home w-full flex flex-col items-center md:items-start  md:flex-row-reverse md:justify-between justify-start  ">
-        <div className="hidden  imageSection md:flex w-80 md:w-2/3 ">
+    <div className="mx-auto lg:max-w-screen-2xl ">
+      <div className="flex flex-col items-center justify-start w-full home md:items-start md:flex-row-reverse md:justify-between ">
+        <div className="hidden imageSection md:flex w-80 md:w-2/3 ">
           <div>
             <Image
               className=""
@@ -20,10 +21,7 @@ export default function page() {
             />
           </div>
         </div>
-        <div
-          className="textSection  flex text-center md:text-left justify-center mb-20 md:mb-0 mt-20 lg:mt-48
-        lg:pl-28 md:pl-16 flex-col lg:w-8/12 md:w-3/4  ml-3 mr-3 md:ml-0 md:mr-0 "
-        >
+        <div className="flex flex-col justify-center mt-20 mb-20 ml-3 mr-3 text-center textSection md:text-left md:mb-0 lg:mt-48 lg:pl-16 xl:pl-40 md:pl-16 lg:w-8/12 md:w-3/4 md:ml-0 md:mr-0 ">
           <h1 className="text-sm font-semibold text-lightestGray">
             GIVE US A CALL
           </h1>
@@ -35,7 +33,7 @@ export default function page() {
           </h1>
           <div className="text-lighterGray lg:text-5xl text-4xl w-fit flex flex-col items-end tracking-[0.03em] ">
             mooonwishstudios
-            <div className="text-lighterGray font-medium text-sm">
+            <div className="text-sm font-medium text-lighterGray">
               @gmail.com
             </div>
           </div>
