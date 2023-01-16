@@ -16,7 +16,6 @@ export default function StepBlock({
   img: string
 }) {
   let textState = reverse ? "md:flex-row-reverse" : "md:flex-row "
-  //   space-x-5
   let imgState = reverse ? "lg:mr-16 md:mr-5 justify-start" : "justify-end"
   let justifyState = reverse ? "justify-end" : "justify-start"
   let alignState = reverse ? "items-start" : "items-end"
