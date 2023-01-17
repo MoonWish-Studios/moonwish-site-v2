@@ -38,7 +38,7 @@ export default function Hero() {
     })
   }
   return (
-    <div className="relative mx-auto max-w-screen-2xl">
+    <div className="relative mx-auto w-full">
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 100, y: 0 }}
@@ -96,7 +96,7 @@ export default function Hero() {
         <motion.div
           animate={animation}
           ref={whoWeAre}
-          className="flex flex-col items-center justify-center space-y-8 bg-gray-100 py-36"
+          className="flex flex-col  items-center justify-center space-y-8 bg-gray-100 py-36"
         >
           <div className="font-semibold text-center title text-gray">
             WHO WE ARE
