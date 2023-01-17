@@ -1,10 +1,33 @@
+"use client"
 import React from "react"
 import Button from "./Button"
 import Image from "next/image"
-import Link from "next/link"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import { useEffect } from "react"
+import { useAnimation } from "framer-motion"
 
 export default function Action({ direction }: { direction: string }) {
   let text = direction == "services" ? "Our Services" : "Our Process"
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  })
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1.5,
+        transition: {
+          duration: 0.5,
+          opacity: 0,
+        },
+      })
+    }
+    if (!inView) {
+      animation.start({ opacity: 0 })
+    }
+  }, [inView])
 
   return (
     <div className="flex flex-row items-center h-screen my-60">
@@ -36,14 +59,18 @@ export default function Action({ direction }: { direction: string }) {
             {text}
           </Button>
         </div>
-        <div className="absolute transform  scale-150 top-1/2 left-1/2 abs-transform -z-10 lg:left-[70%] lg:scale-[175%]">
+        <motion.div
+          ref={ref}
+          animate={animation}
+          className="absolute transform  scale-150 top-1/2 left-1/2 abs-transform -z-10 lg:left-[70%] lg:scale-[175%]"
+        >
           <Image
             src={"/assets/icons/smallMoon.svg"}
             alt={""}
             height={600}
             width={600}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   )
