@@ -8,7 +8,7 @@ specifiers:
   autoprefixer: ^10.4.13
   eslint: 8.29.0
   eslint-config-next: 13.1.0
-  framer-motion: ^8.1.9
+  framer-motion: 8.4.2
   nanoid: ^4.0.0
   next: ^13.1.1
   postcss: ^8.4.20
@@ -29,7 +29,7 @@ dependencies:
   '@types/react-dom': 18.0.9
   eslint: 8.29.0
   eslint-config-next: 13.1.0_s5ps7njkmjlaqajutnox5ntcla
-  framer-motion: 8.1.9_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 8.4.2_biqbaboplfbrettd7655fr4n2y
   nanoid: 4.0.0
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -1207,8 +1207,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion/8.1.9_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-BPXdGhj3V/A1Ke3qDBIxBKvK1FPsbPqv12BA28fPptNvRjIRHPFxmw0WBC4rHOlGHUBxgg1DficZB1/uCpTTkQ==}
+  /framer-motion/8.4.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-AdYwbEZZ+6Z748A8JdNtwH7YR24HvXr/hJHL06ofipMyRchrf7Mzvk69zM24+rAm3SC3DCJK0WdbhpOLzroO+w==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
