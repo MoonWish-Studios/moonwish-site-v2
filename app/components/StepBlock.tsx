@@ -34,6 +34,7 @@ export default function StepBlock({
       animation.start({
         opacity: 1,
         x: 0,
+
         transition: {
           duration: 1,
           type: "spring",
@@ -42,9 +43,9 @@ export default function StepBlock({
     }
     if (!inView) {
       if (reverse) {
-        animation.start({ opacity: 0, x: "-100vw" })
+        animation.start({ opacity: 0, x: 0 })
       } else {
-        animation.start({ opacity: 0, x: "100vw" })
+        animation.start({ opacity: 0, x: 0 })
       }
     }
   })
