@@ -13,7 +13,7 @@ export default function Scroll() {
   //     "envelope.png",
   //   ]
   return (
-    <div className="relative flex items-center space-x-10 overflow-x-auto  ">
+    <div className="relative flex items-center space-x-10 overflow-x-auto scrollbar-hide  ">
       <ProcessImage
         image={"process/contact.png"}
         title={"Contact"}
