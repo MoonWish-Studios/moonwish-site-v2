@@ -36,10 +36,10 @@ export default function ProcessSection() {
         ref={ref}
         className="flex flex-col items-center w-full mb-10 text-center topText lg:pl-20 lg:text-start lg:items-start md:mb-16"
       >
-        <div className="mb-3 text-sm font-semibold text-lighterGray">
+        <div className="mb-3 text-sm font-semibold text-lighterGray 3xl:text-center">
           HOW IT WORKS
         </div>
-        <div className="lg:text-6xl w-8/12 md:text-5xl text-3xl leading-tight tracking-[2px] lg:text-start text-center">
+        <div className=" lg:text-6xl w-full md:text-5xl text-3xl leading-tight tracking-[2px] ">
           Designing delightful user experiences for your brand
         </div>
       </motion.div>
