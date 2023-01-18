@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React, { useEffect, useState } from "react"
 import NavLink from "./NavLink"
+import { motion } from "framer-motion"
 import Button from "./Button"
 
 export default function Navbar() {
@@ -15,7 +16,12 @@ export default function Navbar() {
     console.log(open)
   })
   return (
-    <div className=" lg:mx-auto  xl:w-[80rem] z-[999] relative">
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className=" lg:mx-auto  xl:w-[80rem] z-[999] relative"
+    >
       <div className="flex items-center justify-between py-4 ml-5 mr-5 md:mt-6 md:ml-10 md:mr-10">
         {/* Logo */}
         <Link href="/">
@@ -72,6 +78,6 @@ export default function Navbar() {
           </Button>
         </nav>
       </div>
-    </div>
+    </motion.div>
   )
 }
