@@ -38,12 +38,12 @@ export default function Hero() {
     })
   }
   return (
-    <div className="relative mx-auto w-full">
+    <div className="relative w-full mx-auto">
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 100, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative flex flex-col items-center justify-start w-full mb-12 overflow-x-clip home md:items-start md:flex-row-reverse md:justify-between "
+        className="relative flex flex-col items-center justify-start w-full mx-auto mb-12 max-w-7xl overflow-x-clip home md:items-start md:flex-row-reverse md:justify-between "
       >
         <motion.div className="flex w-full pb-10 imageSection md:w-2/3">
           <div>
@@ -56,8 +56,8 @@ export default function Hero() {
             />
           </div>
         </motion.div>
-        <motion.div className="flex flex-col justify-center max-w-[56rem]   ml-3 mr-3 text-center textSection md:text-left md:mt-20 lg:mt-32 xl:ml-48 md:ml-16 lg:w-8/12  md:w-3/4 md:mr-0  ">
-          <h1 className=" inline lg:text-5xl text-4xl font-medium tracking-[0.03em] lg:leading-tight">
+        <motion.div className="flex flex-col justify-center max-w-[56rem]  ml-3 mr-3 text-center textSection md:text-left md:mt-20 lg:mt-32 xl:ml-30 md:ml-16 lg:w-8/12  md:w-3/4 md:mr-0  ">
+          <h1 className=" inline lg:text-5xl text-4xl max-w-2xl font-medium tracking-[0.03em] lg:leading-tight">
             We make modern websites for your business{" "}
             <Image
               className="inline"
@@ -96,7 +96,7 @@ export default function Hero() {
         <motion.div
           animate={animation}
           ref={whoWeAre}
-          className="flex flex-col  items-center justify-center space-y-8 bg-gray-100 py-36"
+          className="flex flex-col items-center justify-center space-y-8 bg-gray-100 py-36"
         >
           <div className="font-semibold text-center title text-gray">
             WHO WE ARE
